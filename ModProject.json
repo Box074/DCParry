@@ -1,0 +1,16 @@
+{
+  "ProjectName": "DCParry",
+  "ModVersion": "0.0.0.0",
+  "CodeDir": ".\\Scripts\\",
+  "EmbeddedResourceDir": ".\\EmbeddedResource\\",
+  "EmbeddedResource": {
+    "en.txt": "DCParry.Languages.en",
+    "zh-cn.txt": "DCParry.Languages.zh-cn",
+    "shield.png": "DCParry.Images.Shield"
+  },
+  "Guid": "c03aee5e-0107-45e7-8edd-7736bbcdc538",
+  "DependenciesDir": ".\\Dependencies\\",
+  "ModdingAPIVersion": "1.5.78.11833-67",
+  "IgnoreDlls": [],
+  "WebDependencies": []
+}
