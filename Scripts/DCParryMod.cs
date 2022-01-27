@@ -11,9 +11,13 @@ class DCParryMod : ModBase , Modding.IGlobalSettings<Settings>, Modding.ICustomM
     public override void Initialize()
     {
         parryAudio = Resources.Load<AudioClip>("hero_parry");
-        Modding.ModHooks.HeroUpdateHook += () => {
+        /*Modding.ModHooks.HeroUpdateHook += () => {
             if(!HeroController.instance.GetComponent<HeroAttach>()) 
                 HeroController.instance.gameObject.AddComponent<HeroAttach>();
+        };*/
+        On.HeroController.Start += (orig,self)=>{
+            orig(self);
+            self.gameObject.AddComponent<HeroAttach>();
         };
         using(var stream = typeof(DCParryMod).Assembly.GetManifestResourceStream("DCParry.Images.Shield"))
         {
