@@ -1,6 +1,6 @@
 {
   "ProjectName": "DCParry",
-  "ModVersion": "0.0.0.1",
+  "ModVersion": "0.0.0.2",
   "CodeDir": ".\\Scripts\\",
   "EmbeddedResourceDir": ".\\EmbeddedResource\\",
   "EmbeddedResource": {
